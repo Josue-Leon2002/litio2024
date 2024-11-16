@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenido!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e0f7fa;
+            color: #006064;
+        }
+        header {
+            padding: 20px;
+            background-color: #00796b;
+            color: #ffffff;
+        }
+        main {
+            padding: 30px;
+        }
+        .welcome {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #004d40;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00332b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a Mi Página Web!</h1>
+    </header>
+    <main>
+        <p class="welcome">Haz clic en el botón para recibir un mensaje especial de bienvenida.</p>
+        <button onclick="mostrarBienvenida()">Haz clic aquí</button>
+        <p id="mensaje" style="font-weight: bold; margin-top: 20px;"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Proyecto Web</p>
+    </footer>
+
+    <script>
+        function mostrarBienvenida() {
+            const mensaje = "¡Gracias por visitarnos! Espero que disfrutes explorando nuestra página.";
+            document.getElementById("mensaje").textContent = mensaje;
+        }
+    </script>
+</body>
+</html>
